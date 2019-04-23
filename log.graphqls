@@ -16,28 +16,15 @@
 
 type LogRecord {
     time: String!
-    level: LoggerLevel!
-    thread: String
-    location: String
     traceId: String!
-    span: Int!
     hostname: String!
     appname: String!
     message: String
-    stack: String
 }
 
 type LogBrief {
     logRecords: [LogRecord]
     total: Int!
-}
-
-enum LoggerLevel {
-    ERROR
-    WARN
-    INFO
-    DEBUG
-    TRACE
 }
 
 extend type Query {
