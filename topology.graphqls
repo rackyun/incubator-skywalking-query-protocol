@@ -34,7 +34,7 @@ type Node {
     type: String
     # It is a conjuecture node or real node, to represent a service or endpoint.
     isReal: Boolean!
-    sla: Long
+    sla: Int
     cpm: Int
 }
 
