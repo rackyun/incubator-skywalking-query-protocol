@@ -16,7 +16,7 @@
 
 type EventRecord {
     traceId: ID!
-    eventTime: String!
+    timestamp: Long!
     event: String!
     message: String!
     tagName: String!
@@ -30,4 +30,5 @@ type EventBrief {
 
 extend type Query {
     queryEventRecord(tagName: String!): EventBrief
+    queryEventRecordByTraceId(traceId: ID!): EventBrief
 }
