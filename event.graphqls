@@ -29,6 +29,6 @@ type EventBrief {
 }
 
 extend type Query {
-    queryEventRecord(tagName: String!): EventBrief
+    queryEventRecord(tagValue: String!): EventBrief
     queryEventRecordByTraceId(traceId: ID!): EventBrief
 }
