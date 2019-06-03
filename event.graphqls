@@ -19,8 +19,8 @@ type EventRecord {
     timestamp: Long!
     event: String!
     message: String!
-    tagName: String!
-    tagValue: String!
+    bizTagName: String!
+    bizTagValue: String!
 }
 
 type EventBrief {
