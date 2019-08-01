@@ -34,6 +34,8 @@ type Node {
     type: String
     # It is a conjuecture node or real node, to represent a service or endpoint.
     isReal: Boolean!
+    sla: Int
+    cpm: Int
 }
 
 # The Call represents a directed distributed call,
